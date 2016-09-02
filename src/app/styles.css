@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .background {
     /*background: url("/app/content/images/background.png");*/
     background: rgba(255, 255, 0, .2);
@@ -136,17 +140,21 @@ md-button {
 }
 
 .active-row {
-    background-color: rgb(9, 73, 0)!important;
+    background-color: rgb(105, 105, 0)!important;
     color: white;
 }
 
 .active-row:hover {
-    background-color: rgb(15, 118, 0)!important;
+    background-color: rgba(105, 105, 0, .9)!important;
 }
 
 md-sidenav {
-    position: fixed!important;
+    /*position: fixed!important;*/
     height: 100vh;
     width: 300px;
+}
+
+md-sidenav md-toolbar {
+    background-color: rgb(105, 105, 0)!important;
 }
 /* Конец Меню */

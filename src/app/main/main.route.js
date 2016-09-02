@@ -19,11 +19,17 @@
                 //     // }
                 // })
                 .state('main', {
-                    url: '/',
+                    // url: '/',
                     templateUrl: 'app/main/main.html',
                     controller: 'MainController',
                     controllerAs: 'main',
-                    // abstract: true
+                    abstract: true
+                })
+                .state('main.home', {
+                    url: '/',
+                    templateUrl: 'app/main/home/home.html',
+                    controller: 'HomeController',
+                    controllerAs: 'home'
                 })
                 // .state('common.main', {
                 //     url: '/main',

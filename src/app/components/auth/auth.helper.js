@@ -54,7 +54,8 @@ if (loginData.login == 'drawer') loginData.permissions = PERMISSIONS.DRAWER;
     // Переброс на стартовую страницу в зависимости от роли пользователя
     function defaultPageRedirectByPermissions(permission) {
         switch (permission) {
-          case PERMISSIONS.GUEST:   { $state.go('main.auth'); break; }
+          // case PERMISSIONS.GUEST:   { $state.go('main.auth'); break; }
+          case PERMISSIONS.GUEST:   { $state.go('main.home'); break; }
           case PERMISSIONS.CUSTOMER: { $state.go('main.customer'); break; }
           case PERMISSIONS.DRAWER: { $state.go('main.drawer'); break; }
           case PERMISSIONS.ADMIN:   { $state.go('main.admin'); break; }

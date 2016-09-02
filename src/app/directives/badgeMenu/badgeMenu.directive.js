@@ -6,6 +6,7 @@
             scope.$on('$stateChangeSuccess', function(){
                 badgeCurrentMenuRow(element, attrs.uiSref, $state.current.name);
             });
+            badgeCurrentMenuRow(element, attrs.uiSref, $state.current.name);
         }
     }
 });
