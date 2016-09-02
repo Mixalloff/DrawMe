@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="app/components/auth/views/dialogStyles.css">
+<md-dialog aria-label="register_dialog" class="register_dialog">
+   <md-dialog-content layout="column">
+       <h2 class="inner_header">Регистрация</h2>
+       <div class="user_fields_container" layout="column">
+            <md-input-container>
+                <label>Кто Вы?</label>
+                <md-select ng-model="user.role"
+                        placeholder="Кем Вы являетесь?">
+                <md-option ng-value="role" ng-repeat="role in register.roles">
+                    {{ role.name }}
+                </md-option>
+                </md-select>
+            </md-input-container>
+            <md-input-container>
+                <input name="email"
+                        type="email"
+                        ng-model="user.email"
+                        placeholder="Email"
+                        aria-label="email">
+            </md-input-container>
+            <md-input-container>
+                <input name="password"
+                        type="password"
+                        ng-model="user.password"
+                        placeholder="Пароль"
+                        aria-label="password">
+            </md-input-container>
+       </div>
+   </md-dialog-content>
+   <md-dialog-actions>
+        <span flex></span>
+        <md-button aria-label="doneBtn" ng-click="register.ok(user)">
+        	Добавить
+        </md-button>
+        <md-button aria-label="cancelBtn" ng-click="register.cancel()">
+            Отмена
+        </md-button>
+   </md-dialog-actions>
+</md-dialog>

@@ -2,13 +2,21 @@ a {
     text-decoration: none;
 }
 
+.content_container {
+    padding: 20px;
+}
+
 .background {
-    /*background: url("/app/content/images/background.png");*/
-    background: rgba(255, 255, 0, .2);
+   background: rgba(255, 255, 0, .2);
+   /*background: url("/assets/images/background.png");*/
 }
 
 body, .under_header, md-content {
     background-color: #EAEAEA;
+}
+
+md-dialog-content {
+    padding: 20px;
 }
 
 md-toolbar.header {
@@ -20,19 +28,6 @@ md-toolbar.header {
 md-content {
     background-color: white;
 }
-
-/*md-sidenav  {
-    color: rgba(255, 255, 255, 0.87);
-    background-color: rgb(85, 88, 0);
-}
-
-md-backdrop, md-sidenav, .header {
-    position: fixed!important;
-}
-
-md-button {
-    color: rgba(255, 255, 255, 0.87);
-}*/
 
 .full_width {
     width: 100%;
