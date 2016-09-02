@@ -1,19 +1,5 @@
 <md-sidenav md-component-id="left"
             class="left-sidenav md-whiteframe-z2 sidebar"
             md-is-locked-open="$mdMedia('gt-md')">
-    <!--<div>
-        <div ng-if="dmMenu.currentRole() == dmMenu.roles.DRAWER">
-            <span>drawer</span>
-        </div>
-        <div ng-if="dmMenu.currentRole() == dmMenu.roles.CUSTOMER">
-            <span>customer</span>
-        </div>
-        <div ng-if="dmMenu.currentRole() == dmMenu.roles.ADMIN">
-            <span>admin</span>
-        </div>
-        <div ng-if="dmMenu.currentRole() == dmMenu.roles.GUEST">
-            <span>guest</span>
-        </div>
-    </div> -->
     <div ng-include="dmMenu.getMenuPartial()"></div>
 </md-sidenav>

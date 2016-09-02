@@ -2,7 +2,7 @@ angular.module('app',
     [
         'app.core',
         'app.auth',
-        'app.common',
+        'app.main',
         'app.personal',
         'app.directives'
     ])

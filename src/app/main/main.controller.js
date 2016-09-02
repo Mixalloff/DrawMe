@@ -1,7 +1,7 @@
 (function() {
     angular
-        .module('app.common')
-        .controller('CommonController', function() {
+        .module('app.main')
+        .controller('MainController', function() {
             var vm = this;
             vm.toogleNav = toogleNav;
             

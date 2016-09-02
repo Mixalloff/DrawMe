@@ -29,6 +29,16 @@
                     // resolve: {
                     //     autologin: autologin
                     // }
+                })
+                .state('page404', {
+                    url: '/404_page_not_found',
+                    // templateUrl: 'app/page404/page404.html',
+                    data: {
+                        permissions: [
+                            PERMISSIONS.ADMIN
+                        ]
+                    }
                 });
+            $urlRouterProvider.otherwise('/404_page_not_found');
         });
 })();
