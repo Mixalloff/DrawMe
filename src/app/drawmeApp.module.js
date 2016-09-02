@@ -3,7 +3,6 @@ angular.module('app',
         'app.core',
         'app.auth',
         'app.main',
-        'app.personal',
         'app.directives'
     ])
 .run(function($http, $cookies, $rootScope, authHelper, currentUser) {
