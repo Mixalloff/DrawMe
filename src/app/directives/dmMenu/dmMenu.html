@@ -1,5 +1,9 @@
 <md-sidenav md-component-id="left"
             class="left-sidenav md-whiteframe-z2 sidebar"
-            md-is-locked-open="$mdMedia('gt-md')">
-    <div ng-include="dmMenu.getMenuPartial()"></div>
+            md-is-locked-open="$mdMedia('gt-md')"
+            layout="column">
+    <link rel="stylesheet" href="app/directives/dmMenu/dmMenu.css">
+    <div ng-include="dmMenu.getMenuPartial()"
+         layout="column"
+         flex></div>
 </md-sidenav>

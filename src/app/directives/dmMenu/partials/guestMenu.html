@@ -1,1 +1,47 @@
-<div>Guest menu</div>
+<md-toolbar class="md-theme-indigo">
+    <h2 class="md-toolbar-tools">Меню</h2>
+</md-toolbar>
+<md-content flex id="content" flex role="navigation">
+    <div class="mini_login_form">
+        <h2 class="mini_login_form_title">Авторизация</h2>
+        <md-input-container class="login_input_container">
+           <input type="text"
+                  ng-model="login"
+                  placeholder="Логин"
+                  aria-label="login">
+        </md-input-container>
+        <md-input-container class="login_input_container">
+           <input type="password"
+                  ng-model="password"
+                  placeholder="Пароль"
+                  aria-label="password">
+        </md-input-container>
+        <div class="login_btns" layout="column">
+            <md-button class="enter_btn mini_login_form_btn"
+                       aria-label="enter_btn"
+                       flex> Вход </md-button>
+            <md-button class="register_btn mini_login_form_btn"
+                       aria-label="register_btn"
+                       flex> Регистрация </md-button>
+        </div>
+        
+    </div>
+    <!--<md-button class="md-fab"
+               aria-label="open_mini_login_form_btn">
+            <md-icon md-font-library="material-icons">expand_more</md-icon>
+    </md-button>-->
+    <md-divider></md-divider>
+    <div class="nav_list">
+        <md-button ui-sref="main.pictures" id="main.pictures" class="menu-row" badge-menu layout="row" > 
+            <span class="menu-label">Картины</span>
+            <!--<md-icon md-font-library="material-icons">desktop_windows</md-icon>-->
+        </md-button>
+        <md-button ui-sref="main.service_offers" id="main.service_offers" class="menu-row" badge-menu layout="row" > 
+            <span class="menu-label">Услуги</span>
+        </md-button>
+        <md-button ui-sref="main.orders" id="main.orders" class="menu-row" badge-menu layout="row" > 
+            <span class="menu-label">Заказы</span>
+        </md-button>
+    </div>
+    
+</md-content>

@@ -1,0 +1,30 @@
+/*.left-sidenav {
+    padding: 20px;
+}*/
+
+.mini_login_form {
+    padding: 20px;
+}
+
+.login_input_container {
+    width: 100%;
+    padding: 0;
+}
+
+.mini_login_form_btn,
+.login_input_container {
+    margin: 0;
+}
+
+.nav_list {
+    padding-top: 50px;
+}
+.mini_login_form_title {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 0;
+}

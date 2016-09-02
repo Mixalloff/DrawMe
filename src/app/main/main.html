@@ -1,24 +1,22 @@
-  <link rel="stylesheet" href="app/main/main.css">
- <md-toolbar layout="row" class="header md-whiteframe-z2">
-    <div class="md-toolbar-tools">
+<link rel="stylesheet" href="app/main/main.css">
+<!--Место для левого меню-->
+<dm-menu></dm-menu>
+<md-toolbar layout="row" class="header md-whiteframe-z2">
+  <div class="md-toolbar-tools">
+    <md-button ng-click="main.toogleNav('left')" class="md-icon-button" aria-label="menu" hide-gt-md>
+      <md-icon md-font-library="material-icons">menu</md-icon>
+    </md-button>
+    <span flex></span>
+    <md-button ng-click="main.toogleNav('right')" class="md-icon-button" aria-label="Filter">
+      <md-icon md-font-library="material-icons">search</md-icon>
+    </md-button>
+  </div>
+</md-toolbar>
+<md-content flex id="content" class="background" layout="row">
+    
 
-      <md-button ng-click="main.toogleNav('left')" class="md-icon-button" aria-label="menu">
-        <md-icon md-font-library="material-icons">menu</md-icon>
-      </md-button>
-
-      <span flex></span>
-
-      <md-button ng-click="main.toogleNav('right')" class="md-icon-button" aria-label="Filter">
-        <md-icon md-font-library="material-icons">filter_list</md-icon>
-      </md-button>
-    </div>
-  </md-toolbar>
-  <md-content flex id="content" class="background" layout="row">
-      <!--Место для левого меню-->
-      <dm-menu></dm-menu>
-
-      <!--Основной контейнер-->
-      <md-content flex id="content">
-        <ui-view></ui-view>
-      </md-content>
-  </md-content> 
+    <!--Основной контейнер-->
+    <md-content flex id="content">
+      <ui-view></ui-view>
+    </md-content>
+</md-content> 
