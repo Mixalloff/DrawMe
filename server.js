@@ -1,7 +1,8 @@
 'use strict';
 
-var express    = require("express"),
-    app        = express();
+var express    = require('express'),
+    app        = express(),
+    config     = require('./server.config.js');
     
 class Server {
     constructor(port){
@@ -22,7 +23,7 @@ class Server {
     }
 }
 
-var server = new Server(8080);
+var server = new Server(config.port);
 server.run();
 
 module.exports = Server;
