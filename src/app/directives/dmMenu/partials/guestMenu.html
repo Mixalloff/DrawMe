@@ -25,27 +25,21 @@
                        ng-click="main.openRegisterDialog($event)"
                        flex> Регистрация </md-button>
         </div>
-        
     </div>
-    <!--<md-button class="md-fab"
-               aria-label="open_mini_login_form_btn">
-            <md-icon md-font-library="material-icons">expand_more</md-icon>
-    </md-button>-->
     <md-divider></md-divider>
     <div class="nav_list">
-        <md-button ui-sref="main" id="main" class="menu-row" badge-menu layout="row" > 
+        <md-button ui-sref="main.home" id="main.home" class="menu-row" badge-menu layout="row" > 
             <span class="menu-label">Главная</span>
         </md-button>
         <md-button ui-sref="main.pictures" id="main.pictures" class="menu-row" badge-menu layout="row" > 
             <span class="menu-label">Картины</span>
             <!--<md-icon md-font-library="material-icons">desktop_windows</md-icon>-->
         </md-button>
-        <md-button ui-sref="main.service_offers" id="main.service_offers" class="menu-row" badge-menu layout="row" > 
+        <md-button ui-sref="main.offers" id="main.offers" class="menu-row" badge-menu layout="row" > 
             <span class="menu-label">Услуги</span>
         </md-button>
         <md-button ui-sref="main.orders" id="main.orders" class="menu-row" badge-menu layout="row" > 
             <span class="menu-label">Заказы</span>
         </md-button>
     </div>
-    
 </md-content>

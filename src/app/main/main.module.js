@@ -1,4 +1,8 @@
 (function() {
     angular
-        .module('app.main', []);
+        .module('app.main', [
+            'app.offers',
+            'app.orders',
+            'app.pictures'
+        ]);
 })();

@@ -4,22 +4,7 @@
         .config(function($stateProvider) {
             'use strict';
             $stateProvider
-                // .state('common', {
-                //     url: '/common',
-                //     templateURL: 'app/common/common.html',
-                //     controller: 'CommonController',
-                //     controllerAs: 'common'
-                //     // views: {
-                //     //     "": {
-                //     //         templateURL: 'app/common/common.html',
-                //     //         controller: 'CommonController',
-                //     //         controllerAs: 'common'
-                //     //     },
-                //     //     ""
-                //     // }
-                // })
                 .state('main', {
-                    // url: '/',
                     templateUrl: 'app/main/main.html',
                     controller: 'MainController',
                     controllerAs: 'main',
@@ -31,25 +16,23 @@
                     controller: 'HomeController',
                     controllerAs: 'home'
                 })
-                // .state('common.main', {
-                //     url: '/main',
-                //     views: {
-                //         'menu': {
-                //             templateURL: 'app/common/customer/menu.html',
-                //             controller: 'CustomerController',
-                //             controllerAs: 'customer'
-                //         }
-                //     }
-                // })
-                // .state('common.customer', {
-                //     url: '/customer',
-                //     views: {
-                //         'menu': {
-                //             templateURL: 'app/common/customer/menu.html',
-                //             controller: 'CustomerController',
-                //             controllerAs: 'customer'
-                //         }
-                //     }
-                // })
+                .state('main.offers', {
+                    url: '/offers',
+                    templateUrl: 'app/main/offers/offers.html',
+                    controller: 'OffersController',
+                    controllerAs: 'offers'
+                })
+                .state('main.orders', {
+                    url: '/orders',
+                    templateUrl: 'app/main/orders/orders.html',
+                    controller: 'OrdersController',
+                    controllerAs: 'orders'
+                })
+                .state('main.pictures', {
+                    url: '/pictures',
+                    templateUrl: 'app/main/pictures/pictures.html',
+                    controller: 'PicturesController',
+                    controllerAs: 'pictures'
+                })
         })
 })();
